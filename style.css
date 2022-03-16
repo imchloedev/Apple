@@ -1,0 +1,607 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid silver; */
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  line-height: 1.2rem;
+  color: #1d1d1f;
+  letter-spacing: -0.02rem;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 51px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-family: 'Sen', sans-serif;
+}
+
+h5 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #545454;
+  font-family: 'Sen', sans-serif;
+}
+
+h6 {
+  font-size: 19px;
+}
+
+a:link {
+  color: #292929;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #292929;
+}
+
+a:hover {
+  color: #292929;
+}
+
+a:active {
+  color: #292929;
+}
+
+button {
+  width: 122px;
+  height: 42px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background: #292929;
+  border: 1px solid #292929;
+  border-radius: 20px;
+  transition: 0.8s;
+  color: white;
+}
+
+button:hover {
+  background: white;
+  border: 1px solid #ccc;
+  color: #292929;
+  cursor: pointer;
+}
+
+img {
+  width: 100px;
+}
+
+/* mobile start */
+/* 1000px 이하 */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 48px;
+  color: #f5f5f7;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+header .m_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+header .m_header a {
+  width: 24px;
+  height: 24px;
+}
+
+header .m_header img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+header .pc_header {
+  display: none;
+}
+
+.event {
+  background: #f5f5f7;
+  padding: 10px 20px;
+  margin-top: 48px;
+  text-align: center;
+  color: #1d1d1f
+}
+
+.event a {
+  color: #06c;
+}
+
+.event a:hover {
+  text-decoration: underline;
+}
+
+.promotion section {
+  width: 100%;
+  height: 548px;
+  margin-top: 10px;
+}
+
+.promotion section:nth-child(1) {
+  margin-top: 0;
+}
+
+.promotion section > div {
+  text-align: center;
+  padding-top: 37px;
+}
+
+.promotion section div h1 {
+  font-size: 32px;
+}
+
+.promotion section div h3 {
+  font-size: 19px;
+}
+
+.promotion section div p {
+  color: #86868b;
+  font-size: 17px;
+  line-height: 1.8rem;
+}
+
+.promotion section div div {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.promotion section div div img {
+  width: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.promotion section div div a {
+  color: #06c;
+}
+
+.promotion>:nth-child(1) {
+  background: url('https://www.apple.com/v/home/al/images/heroes/iphone-13-pro-avail/hero_iphone13pro_preorder__d46ofk3816wm_small_2x.jpg') no-repeat;
+  background-size: 734px 548px;
+  background-position: center center;
+}
+
+.promotion>:nth-child(2) {
+  background: url('https://www.apple.com/v/home/al/images/heroes/iphone-se/hero_iphonese_preorder__e4eta8trjs66_small_2x.jpg') no-repeat;
+  background-size: 734px 548px;
+  background-position: center center;
+}
+
+.promotion>:nth-child(3) {
+  background: url('https://www.apple.com/v/home/al/images/heroes/ipad-air/hero_ipadair__flhdv47anjqu_mediumtall_2x.jpg') no-repeat;
+  background-size: 734px 548px;
+  background-position: center center;
+}
+
+.promotion>:nth-child(3) div h3 {
+  color: white;
+}
+
+.products {
+  padding: 20px 0;
+}
+
+.products section {
+  width: 100%;
+  height: 548px;
+  margin-top: 10px;
+}
+
+.products section > div {
+  text-align: center;
+  padding-top: 48px;
+}
+
+.products section div h1 {
+  font-size: 32px;
+  line-height: 3rem;
+}
+
+.products section div h3 {
+  font-size: 19px;
+}
+
+.products section div p {
+  color: #86868b;
+  font-size: 17px;
+  line-height: 1.8rem;
+}
+
+.products section div div {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.products section div div img {
+  width: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.products>:nth-child(1) {
+  background: url('https://www.apple.com/v/home/al/images/promos/studio-display/promo_studiodisplay__b449sh436cdy_small.jpg') no-repeat;
+  background-size: 734px 548px;
+  background-position: center center;
+}
+
+.products>:nth-child(2) {
+  background: url('https://www.apple.com/v/home/al/images/promos/mac-studio/promo_macstudio__gl7zppziivma_small.jpg') no-repeat;
+  background-size: 734px 548px;
+  background-position: center center;
+}
+
+.products>:nth-child(3) {
+  background: url('https://www.apple.com/v/home/al/images/promos/iphone-13-avail/promo_iphone13_preorder__egirfkqfbwom_small.jpg') no-repeat;
+  background-size: 734px 548px;
+  background-position: center center;
+}
+
+.products>:nth-child(4) {
+  background: url('https://www.apple.com/kr/home/al/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_small.jpg') no-repeat;
+  background-size: 734px 548px;
+  background-position: center center;
+}
+
+.products>:nth-child(5) {
+  background: url('https://www.apple.com/kr/home/al/images/promos/soip-rock/promo_cwp_bts__fdk8xvz0dvu6_small.jpg') no-repeat;
+  background-size: 734px 548px;
+  background-position: center center;
+}
+
+.products>:nth-child(5)>div {
+  padding-top: 156px;
+}
+
+.products>:nth-child(5)>div div a {
+  color: white;
+}
+
+.products>:nth-child(6) {
+  background: url('https://www.apple.com/kr/home/al/images/promos/tv-plus-multishow/tile_freeshows__e35b5brgkmi6_small.jpg') no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.products>:nth-child(6)>div {
+  padding-top: 325px;
+  color: white;
+}
+
+.products>:nth-child(6)>div div a {
+  color: #06c;
+}
+
+footer {
+  color: rgb(110, 110, 115);
+  background: rgb(245, 245, 247);
+  font-size: 12px;
+}
+
+footer>div {
+  padding: 20px 20px;
+}
+
+footer div p {
+  margin-bottom: 20px;
+}
+
+footer div .m_footer div {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(110, 110, 115);
+}
+
+footer div .m_footer div a {
+  color: rgb(110, 110, 115);
+}
+
+footer div .m_footer div a:hover {
+  color: black;
+}
+
+footer div .m_footer div img {
+  width: 10px;
+}
+
+footer>div> :nth-child(4) {
+  margin: 20px 0;
+}
+
+footer>div> :nth-child(4) a {
+  color: #06c;
+}
+
+footer>div> :nth-child(4) a:hover {
+  text-decoration: underline;
+}
+
+footer>div> :nth-child(5)> :nth-child(1) a {
+  color: rgb(110, 110, 115);
+}
+
+footer>div> :nth-child(5)> :nth-child(2) {
+  margin: 10px 0;
+}
+
+footer>div> :nth-child(5)> :nth-child(2) ul a {
+  color: #424242;
+}
+
+footer>div> :nth-child(5)> :nth-child(2) ul a:hover {
+  text-decoration: underline;
+}
+
+footer>div> :nth-child(5)> :nth-child(2) ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer>div> :nth-child(5)> :nth-child(2) ul li::after {
+  content: "|";
+  color: rgb(110, 110, 115);
+  margin: 0 10px;
+}
+
+footer>div> :nth-child(5)> :nth-child(2) ul li:nth-child(5)::after {
+  display: none;
+}
+
+footer>div> :nth-child(6) {
+  font-size: 11px;
+  color: #999;
+}
+
+footer div .pc_footer {
+  display: none;
+}
+
+/* laptop start */
+/* 1000px이상 */
+@media screen and (min-width: 734px) {
+  header {
+    height: auto;
+  }
+
+  header .m_header {
+    display: none;
+  }
+
+  header .pc_header {
+    display: block;
+    padding: 0 20px;
+  }
+
+  header .pc_header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .pc_header nav ul li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  header .pc_header nav ul a {
+    color: #f5f5f7;
+    width: auto;
+    height: 44px;
+    line-height: 44px;
+    transition: 0.7s;
+  }
+
+  header .pc_header nav ul a:hover {
+    color: white;
+  }
+
+  header .pc_header nav ul img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .event {
+    margin-top: 44px;
+  }
+
+  .promotion section {
+    width: 100%;
+    height: 736px;
+  }
+
+  .promotion section div h1 {
+    font-size: 48px;
+  }
+
+  .promotion section div h3 {
+    font-size: 24px;
+  }
+
+  .promotion section div p {
+    color: #86868b;
+    font-size: 19px;
+  }
+
+  .promotion section div div a {
+    font-size: 19px;
+  }
+
+  .promotion>:nth-child(1) {
+    background: url('https://www.apple.com/v/home/al/images/heroes/iphone-13-pro-avail/hero_iphone13pro_preorder__d46ofk3816wm_largetall_2x.jpg') no-repeat;
+    background-size: 3008px 736px;
+    background-position: center center;
+  }
+
+  .promotion>:nth-child(2) {
+    background: url('https://www.apple.com/v/home/al/images/heroes/iphone-se/hero_iphonese_preorder__e4eta8trjs66_largetall_2x.jpg') no-repeat;
+    background-size: 3008px 736px;
+    background-position: center center;
+  }
+
+  .promotion>:nth-child(2) div span {
+    font-size: 21px;
+  }
+
+  .promotion>:nth-child(3) {
+    background: url('https://www.apple.com/v/home/al/images/heroes/ipad-air/hero_ipadair__flhdv47anjqu_largetall_2x.jpg') no-repeat;
+    background-size: 3008px 736px;
+    background-position: center center;
+    position: relative;
+  }
+
+  .promotion>:nth-child(3)>div {
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    transform: translate(0, 0);
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px 20px;
+  }
+
+  .products section > div {
+    padding-top: 30px;
+  }
+
+  .products>:nth-child(1) {
+    background: url('https://www.apple.com/v/home/al/images/promos/studio-display/promo_studiodisplay__b449sh436cdy_large.jpg') no-repeat;
+    background-size: 1262px 580px;
+    background-position: center center;
+  }
+
+  .products>:nth-child(2) {
+    background: url('https://www.apple.com/v/home/al/images/promos/mac-studio/promo_macstudio__gl7zppziivma_large.jpg') no-repeat;
+    background-size: 1262px 580px;
+    background-position: center center;
+  }
+
+  .products>:nth-child(3) {
+    background: url('https://www.apple.com/v/home/al/images/promos/iphone-13-avail/promo_iphone13_preorder__egirfkqfbwom_large.jpg') no-repeat;
+    background-size: 1262px 580px;
+    background-position: center center;
+  }
+
+  .products>:nth-child(4) {
+    background: url('https://www.apple.com/kr/home/al/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_large.jpg') no-repeat;
+    background-size: 1262px 580px;
+    background-position: center center;
+  }
+
+  .products>:nth-child(5) {
+    background: url('https://www.apple.com/kr/home/al/images/promos/soip-rock/promo_cwp_bts__fdk8xvz0dvu6_large.jpg') no-repeat;
+    background-size: 1262px 580px;
+    background-position: center center;
+  }
+
+  .products>:nth-child(5)>div {
+    padding-top: 142px;
+  }
+
+  .products>:nth-child(6) {
+    background: url('https://www.apple.com/kr/home/al/images/promos/tv-plus-multishow/tile_freeshows__e35b5brgkmi6_large.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .products>:nth-child(6)>div {
+    padding-top: 323px;
+    color: white;
+  }
+
+  .products>:nth-child(6)>div div a {
+    color: #06c;
+  }
+
+  footer div .m_footer {
+    display: none;
+  }
+
+  footer div .pc_footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #999;
+  }
+
+  footer div .pc_footer div span {
+    color: #1d1d1f;
+    font-weight: 500;
+  }
+
+  footer div .pc_footer div ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+
+  footer div .pc_footer div ul a {
+    color: rgb(110, 110, 115);
+  }
+
+  footer div .pc_footer div ul a:hover {
+    text-decoration: underline;
+  }
+
+  footer div .pc_footer>div:nth-child(2)> :nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  footer div .pc_footer>div:nth-child(4)> :nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  footer div .pc_footer>div:nth-child(5)> :nth-child(2) {
+    margin-bottom: 20px;
+  }
+}
+
+/* hd */
+@media screen and (min-width: 1200px) {
+  header .pc_header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  footer>div {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
