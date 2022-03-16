@@ -189,6 +189,10 @@ header .pc_header {
   color: #06c;
 }
 
+.promotion section div div a:hover {
+  text-decoration: underline;
+}
+
 .promotion>:nth-child(1) {
   background: url('https://www.apple.com/v/home/al/images/heroes/iphone-13-pro-avail/hero_iphone13pro_preorder__d46ofk3816wm_small_2x.jpg') no-repeat;
   background-size: 734px 548px;
@@ -244,6 +248,14 @@ header .pc_header {
 .products section div div {
   margin-top: 10px;
   font-size: 17px;
+}
+
+.products section div div a {
+  color: #06c;
+}
+
+.products section div div a:hover {
+  text-decoration: underline;
 }
 
 .products section div div img {
