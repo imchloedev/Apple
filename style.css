@@ -301,6 +301,10 @@ header .pc_header {
   color: white;
 }
 
+.products>:nth-child(6)>div h3 {
+  line-height: 2rem;
+}
+
 .products>:nth-child(6)>div div a {
   color: #06c;
 }
